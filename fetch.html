@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/fetch.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/mainPage.css">
+    <link rel="stylesheet" href="css/serialls.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <h1 style="color: red;">Neft <span style="color: black;">lix</span></h1>
+            <div id="search">
+                <input type="text" value="" placeholder="search" style="visibility: hidden;">
+                <button class="search-btn" onclick="Search()"> <span class="material-symbols-outlined">search</span>
+                </button>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Serialls</a></li>
+                <li><a href="#">Films</a></li>
+                <li><a href="#">TV</a></li>
+                <li><a href="#">Sport</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+
+            <div class="loginSignup">
+                <a href="#">Login</a>
+                <span>|</span>
+                <a href="#">Sign up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="carousel-divs row  ">
+            <div class="carousel-div carousel-div container col-5">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner  carousel-imgs">
+                        <div class="carousel-item active">
+                            <img src="https://static.tvmaze.com/uploads/images/original_untouched/327/818871.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        
+                    </div>
+                    <button class="carousel-control-prev" onclick="nextSeriall(-1)" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" onclick="nextSeriall(1)" id="myCheck" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+
+
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+
+                    </button>
+                </div>
+
+            </div>
+            <div class="carousel-div container row col-4"  id="about">
+                <h2 class="fs-4">The Daily Show with Jon Stewart </h2>
+                <div class="carousel-div-item item-1 col-5">
+                    <ul>
+                        <li class="list-item gray-line">Genres</li>
+                        <li class="list-item">Rating</li>
+                        <li class="list-item">Type</li>
+                        <li class="list-item">Language</li>
+                        <li class="list-item">Official Site</li>
+                        <li class="list-item">Status</li>
+                    </ul>
+                </div>
+                <div class="carousel-div-item item-2  col-5" style="width: 60%;">
+                    <ul> 
+                        <li class="list-item">Comedy</li>
+                        <li class="list-item">8.3</li>
+                        <li class="list-item">Talk Show</li>
+                        <li class="list-item">English</li>
+                        <li class="list-item"><a href=""></a></li>
+                        <li class="list-item">Ended</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="text ">SERIALLS</div>
+        <div class="serialls-div">
+            <ul class="serialls list-group">
+                <!-- <li class="list-group-item d-flex align-items-start  bg-black">
+                    <a href="#serial-249">
+                        <img src="https://static.tvmaze.com/uploads/images/original_untouched/81/202627.jpg" height="80px" alt="">
+                        
+                        <p><b>Under the Dome</b> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>
+                    </a>
+                    
+                </li> -->
+              </ul>
+        </div>
+
+    </main>
+   
+    <div id="d1" style="display: none;">239</div>
+    <script src="js/fetch.js"></script>
+    <script src="js/mainPage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

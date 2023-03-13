@@ -1,0 +1,57 @@
+
+.carousel-divs{
+    display: flex;
+    float:left;
+    width: 810px;
+    
+    background-color: rgb(53, 53, 53);
+    color: aliceblue;
+    padding: 5px;
+}
+
+.carousel-div{
+ 
+    margin: 7px 0 5px 20px;
+    padding: 15px;
+    height: 90vh;
+    background-color: rgb(27, 27, 27);
+
+}
+#about{
+    width: 50%;
+    
+    padding: 40px 0 0 45px;
+    
+    
+    line-height: 1;
+    overflow: hidden;
+    
+}
+#about .carousel-div-item{
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    width: 40%;
+}
+
+#about .item-1{
+    color: rgb(136, 136, 136);
+}
+#about .item-2{
+    margin-right: 0;
+    padding-right: 0;
+}
+#about ul{
+    text-align: left;
+    height: 70vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#about li{
+    list-style: none;
+    margin: 15px 0;
+    padding: 2px 0;
+}
+
