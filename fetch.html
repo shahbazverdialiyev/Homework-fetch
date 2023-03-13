@@ -19,7 +19,7 @@
 
     <header>
         <div class="header">
-            <h1 style="color: red;">Neft <span style="color: black;">lix</span></h1>
+            <h1 style="color: blue;">Neft <span style="color: rgb(196, 93, 20);">lix</span></h1>
             <div id="search">
                 <input type="text" value="" placeholder="search" style="visibility: hidden;">
                 <button class="search-btn" onclick="Search()"> <span class="material-symbols-outlined">search</span>
@@ -28,7 +28,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Serialls</a></li>
+                <li style=" border-left: 0;"><a href="#">Serialls</a></li>
                 <li><a href="#">Films</a></li>
                 <li><a href="#">TV</a></li>
                 <li><a href="#">Sport</a></li>
@@ -36,14 +36,15 @@
             </ul>
 
             <div class="loginSignup">
-                <a href="#">Login</a>
+                <a href="#login">Login</a>
                 <span>|</span>
-                <a href="#">Sign up</a>
+                <a href="#signUp">Sign up</a>
             </div>
         </nav>
     </header>
 
     <main>
+        <div class="block-1 ">
         <div class="carousel-divs row  ">
             <div class="carousel-div carousel-div container col-5">
                 <div id="carouselExample" class="carousel slide">
@@ -110,6 +111,58 @@
                     
                 </li> -->
               </ul>
+        </div>
+        </div>
+        <div class="typewriter-div">
+                <div class="typewriter">
+                <h1>Thanks your login  or creat account</h1>
+              </div>
+            </div>
+            <br>
+        <div class="block-2" id="login">
+            <div style="display: inline-block; width: 10%;"><h3>Login </h3></div>
+            <div class="form">
+                <form action="" style="width: 90%;" class="text-white">
+                    <div class="mb-3 mt-3">
+                      <label for="email" class="form-label">Email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    </div>
+                    <div class="mb-3">
+                      <label for="pwd" class="form-label">Password:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                    </div>
+                    <div class="form-check mb-3">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>      
+              
+        </div>
+        <div class="block-3" id="signUp">
+            
+            <div style="display: inline-block; width: 15%;"><h3>Sign Up</h3></div>
+            <div class="form">
+                <form action="" style="width: 90%;" class="text-white">
+                    <div class="mb-3 mt-3">
+                      <label for="email" class="form-label">Email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    </div>
+                    <div class="mb-3">
+                      <label for="pwd" class="form-label">Password:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                    </div>
+                    <div class="form-check mb-3">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>      
+              
         </div>
 
     </main>
