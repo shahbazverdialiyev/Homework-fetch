@@ -13,7 +13,6 @@ body{
     align-items: center;
     background-color: #161616;
 }
-
 .search {
     display: flex;
     align-items: center;
@@ -49,16 +48,21 @@ nav{
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    text-align: center;
     align-items: end;
     width: 350px;
     height: 100%;
     margin-left: 140px;
 }
 nav li{
-    padding: 3px 5px 0 40px;
-    margin-left: 40px;
+    padding: 3px 20px 0 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-left: solid 2px rgb(255, 160, 52);
 }
+
+
 
 li a,.loginSignup a {
     text-decoration: none;
@@ -70,6 +74,12 @@ li a,.loginSignup a {
     background-color: #cccccc;
     border-bottom-right-radius: 20px;
 } */
+nav li a:hover{
+    color: rgb(196, 93, 20);
+}
+.loginSignup a:hover{
+    color:rgb(25, 25, 255)
+}
 .loginSignup{
     margin: auto 0;
     width: 200px;
