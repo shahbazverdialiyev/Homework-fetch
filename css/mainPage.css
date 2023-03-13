@@ -1,57 +1,124 @@
+ .block-1 {
+     height: 95vh;
+ }
 
-.carousel-divs{
+ .carousel-divs {
+
+     float: left;
+     width: 810px;
+     height: 95%;
+     background-color: rgb(53, 53, 53);
+     color: aliceblue;
+     padding: 5px;
+ }
+
+ .carousel-div {
+
+     margin: 7px 0 5px 20px;
+     padding: 15px;
+     height: 95%;
+     background-color: rgb(27, 27, 27);
+
+ }
+
+ #about {
+     width: 50%;
+
+     padding: 40px 0 0 45px;
+
+
+     line-height: 1;
+     overflow: hidden;
+
+ }
+
+ #about .carousel-div-item {
+     display: flex;
+     align-items: flex-start;
+     height: 100%;
+     width: 40%;
+ }
+
+ #about .item-1 {
+     color: rgb(136, 136, 136);
+ }
+
+ #about .item-2 {
+     margin-right: 0;
+     padding-right: 0;
+ }
+
+ #about ul {
+     text-align: left;
+     height: 70vh;
+     padding: 0;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+ }
+
+ #about li {
+     list-style: none;
+     margin: 15px 0;
+     padding: 2px 0;
+ }
+
+.block-2,.block-3{
     display: flex;
-    float:left;
-    width: 810px;
-    
-    background-color: rgb(53, 53, 53);
-    color: aliceblue;
-    padding: 5px;
+    width: 100%;
+    padding: 100px;
+}
+.block-3{
+    justify-content: end;
+}
+.block-2 h3,.block-3 h3{
+    font-size: 40px;
+    color: #66a3ff;
+}
+ .block-2 .form ,.block-3 .form{
+     background-color: rgb(17, 17, 17);
+     height: 60vh;
+     width: 30%;
+     padding: 20px;
+     display: flex;
+     justify-content: center;
+     border: solid 4px #0D6EFD;
+     border-radius: 10px;
+     margin-left: 20px;
+ }
+ HTML CSS Result Skip Results Iframe
+/* GLOBAL STYLES */
+.typewriter-div {
+    padding: 200px;
+    height: 400px;
+  background: #333;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
 }
 
-.carousel-div{
- 
-    margin: 7px 0 5px 20px;
-    padding: 15px;
-    height: 90vh;
-    background-color: rgb(27, 27, 27);
-
-}
-#about{
-    width: 50%;
-    
-    padding: 40px 0 0 45px;
-    
-    
-    line-height: 1;
-    overflow: hidden;
-    
-}
-#about .carousel-div-item{
-    display: flex;
-    align-items: flex-start;
-    height: 100%;
-    width: 40%;
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
 }
 
-#about .item-1{
-    color: rgb(136, 136, 136);
-}
-#about .item-2{
-    margin-right: 0;
-    padding-right: 0;
-}
-#about ul{
-    text-align: left;
-    height: 70vh;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-#about li{
-    list-style: none;
-    margin: 15px 0;
-    padding: 2px 0;
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
